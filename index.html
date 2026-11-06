@@ -97,6 +97,10 @@ UA 22 3052 9900 0002 6000 0505 2322 8
                 <a href="#contacts" class="w-full sm:w-auto bg-gray-800 border border-gray-600 text-white font-bold text-base sm:text-lg py-3.5 px-8 rounded-xl hover:border-accent hover:text-accent transition flex items-center justify-center gap-2">
                     <span>💬</span> <span>Написати в месенджер</span>
                 </a>
+                <!-- Кнопка Документи для мобільної версії -->
+                <a href="#documents" class="w-full sm:hidden bg-gray-700 border border-gray-500 text-white font-bold text-base py-3.5 px-8 rounded-xl hover:border-accent hover:text-accent transition flex items-center justify-center gap-2">
+                    <span>📄</span> <span>Документи</span>
+                </a>
             </div>
         </div>
     </section>
@@ -214,33 +218,27 @@ UA 22 3052 9900 0002 6000 0505 2322 8
                     </div>
                 </div>
 
-                <!-- Посвідчення водія (лицьова + зворотна) -->
+                <!-- Посвідчення водія (PDF) -->
                 <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 flex flex-col items-center group hover:border-accent transition">
                     <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden mb-4 relative flex flex-col">
-                        <img src="driver id 1.jpg" alt="Посвідчення водія (лицьова)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition border-b border-gray-900" onerror="this.style.display='none'">
-                        <img src="driver id 2.jpg" alt="Посвідчення водія (зворотна)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
+                        <img src="driver id 1.jpg" alt="Посвідчення водія" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
                     </div>
                     <h4 class="font-bold text-white mb-3 text-center text-sm">Посвідчення водія</h4>
-                    <div class="flex flex-col gap-2 w-full mt-auto">
-                        <div class="flex gap-2 w-full">
-                            <a href="driver id 1.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Лице)</a>
-                            <a href="driver id 2.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Зворот)</a>
-                        </div>
+                    <div class="flex gap-2 w-full mt-auto">
+                        <a href="driver_id.pdf" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-2 rounded hover:bg-gray-700 text-xs font-semibold transition flex items-center justify-center">Відкрити PDF</a>
+                        <a href="driver_id.pdf" download="Посвідчення_водія.pdf" class="flex-1 bg-gray-700 text-accent text-center py-2 rounded hover:bg-gray-600 text-xs font-semibold transition flex items-center justify-center">Завантажити</a>
                     </div>
                 </div>
 
-                <!-- Свідоцтво про реєстрацію ТЗ (лицьова + зворотна) -->
+                <!-- Свідоцтво про реєстрацію ТЗ (PDF) -->
                 <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 flex flex-col items-center group hover:border-accent transition">
                     <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden mb-4 relative flex flex-col">
-                        <img src="id car 1.jpg" alt="Свідоцтво про реєстрацію ТЗ (лицьова)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition border-b border-gray-900" onerror="this.style.display='none'">
-                        <img src="id car 2.jpg" alt="Свідоцтво про реєстрацію ТЗ (зворотна)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
+                        <img src="id car 1.jpg" alt="Свідоцтво про реєстрацію ТЗ" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
                     </div>
                     <h4 class="font-bold text-white mb-3 text-center text-sm">Свідоцтво про реєстрацію ТЗ</h4>
-                    <div class="flex flex-col gap-2 w-full mt-auto">
-                        <div class="flex gap-2 w-full">
-                            <a href="id car 1.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Лице)</a>
-                            <a href="id car 2.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Зворот)</a>
-                        </div>
+                    <div class="flex gap-2 w-full mt-auto">
+                        <a href="car_id.pdf" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-2 rounded hover:bg-gray-700 text-xs font-semibold transition flex items-center justify-center">Відкрити PDF</a>
+                        <a href="car_id.pdf" download="Реєстрація_ТЗ.pdf" class="flex-1 bg-gray-700 text-accent text-center py-2 rounded hover:bg-gray-600 text-xs font-semibold transition flex items-center justify-center">Завантажити</a>
                     </div>
                 </div>
             </div>

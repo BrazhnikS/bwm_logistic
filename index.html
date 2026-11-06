@@ -68,6 +68,9 @@ UA 22 3052 9900 0002 6000 0505 2322 8
                 <a href="tel:+380504563287" class="flex items-center gap-1.5 text-sm sm:text-lg md:text-xl font-bold text-accent hover:text-yellow-300 transition whitespace-nowrap bg-gray-800/80 px-3 py-1.5 rounded-lg border border-gray-700">
                     <span>📞</span> <span>050 456 32 87</span>
                 </a>
+                <a href="#documents" class="hidden md:inline-block bg-gray-800 border border-gray-600 text-white font-bold px-4 py-2 rounded-lg hover:border-accent hover:text-accent transition text-sm">
+                    Документи
+                </a>
                 <a href="#contacts" class="hidden sm:inline-block bg-accent text-graphite font-bold px-4 py-2 rounded-lg hover:bg-yellow-500 transition text-sm">
                     Зв'язатися
                 </a>
@@ -142,7 +145,7 @@ UA 22 3052 9900 0002 6000 0505 2322 8
             </div>
         </section>
 
-        <!-- Водій та Оновлені Реквізити -->
+        <!-- Водій та Реквізити -->
         <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
             
             <!-- Блок Водія -->
@@ -158,7 +161,7 @@ UA 22 3052 9900 0002 6000 0505 2322 8
                 </div>
             </div>
 
-            <!-- Блок Реквізитів (Новий варіант 1 кнопкою) -->
+            <!-- Блок Реквізитів -->
             <div class="bg-gray-900 p-6 sm:p-8 rounded-xl border border-gray-800 flex flex-col h-full">
                 <div class="flex justify-between items-center mb-6 border-b border-gray-800 pb-4">
                     <h3 class="text-xl font-bold uppercase border-l-4 border-accent pl-3">Реквізити ФОП</h3>
@@ -182,32 +185,62 @@ UA 22 3052 9900 0002 6000 0505 2322 8
             </div>
         </section>
 
-        <!-- Установчі Документи -->
-        <section class="border-t border-gray-800 pt-16">
-            <h2 class="text-2xl sm:text-3xl font-bold uppercase border-l-4 border-accent pl-4 mb-8 text-center sm:text-left">Установчі документи</h2>
+        <!-- Документи -->
+        <section id="documents" class="border-t border-gray-800 pt-16">
+            <h2 class="text-2xl sm:text-3xl font-bold uppercase border-l-4 border-accent pl-4 mb-8 text-center sm:text-left">Документи</h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto sm:mx-0">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Виписка -->
                 <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 flex flex-col items-center group hover:border-accent transition">
-                    <div class="w-full h-48 bg-gray-800 rounded-lg overflow-hidden mb-4 relative">
+                    <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden mb-4 relative">
                         <img src="vipiska.jpg" alt="Виписка ФОП" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
                     </div>
-                    <h4 class="font-bold text-white mb-3 text-center">Виписка з ЄДР</h4>
-                    <div class="flex gap-2 w-full">
-                        <a href="vipiska.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-2 rounded hover:bg-gray-700 text-sm font-semibold transition">Відкрити</a>
-                        <a href="vipiska.jpg" download="Виписка_ФОП_Бражнік.jpg" class="flex-1 bg-gray-700 text-accent text-center py-2 rounded hover:bg-gray-600 text-sm font-semibold transition">Завантажити</a>
+                    <h4 class="font-bold text-white mb-3 text-center text-sm">Виписка з ЄДР</h4>
+                    <div class="flex gap-2 w-full mt-auto">
+                        <a href="vipiska.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-2 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити</a>
+                        <a href="vipiska.jpg" download="Виписка_ФОП.jpg" class="flex-1 bg-gray-700 text-accent text-center py-2 rounded hover:bg-gray-600 text-xs font-semibold transition">Завантажити</a>
                     </div>
                 </div>
 
                 <!-- Витяг -->
                 <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 flex flex-col items-center group hover:border-accent transition">
-                    <div class="w-full h-48 bg-gray-800 rounded-lg overflow-hidden mb-4 relative">
-                        <img src="vutag.jpg" alt="Витяг з реєстру платників єдиного податку" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
+                    <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden mb-4 relative">
+                        <img src="vutag.jpg" alt="Витяг платника ЄП" class="object-cover w-full h-full opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
                     </div>
-                    <h4 class="font-bold text-white mb-3 text-center">Витяг платника ЄП</h4>
-                    <div class="flex gap-2 w-full">
-                        <a href="vutag.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-2 rounded hover:bg-gray-700 text-sm font-semibold transition">Відкрити</a>
-                        <a href="vutag.jpg" download="Витяг_ФОП_Бражнік.jpg" class="flex-1 bg-gray-700 text-accent text-center py-2 rounded hover:bg-gray-600 text-sm font-semibold transition">Завантажити</a>
+                    <h4 class="font-bold text-white mb-3 text-center text-sm">Витяг платника ЄП</h4>
+                    <div class="flex gap-2 w-full mt-auto">
+                        <a href="vutag.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-2 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити</a>
+                        <a href="vutag.jpg" download="Витяг_ФОП.jpg" class="flex-1 bg-gray-700 text-accent text-center py-2 rounded hover:bg-gray-600 text-xs font-semibold transition">Завантажити</a>
+                    </div>
+                </div>
+
+                <!-- Посвідчення водія (лицьова + зворотна) -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 flex flex-col items-center group hover:border-accent transition">
+                    <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden mb-4 relative flex flex-col">
+                        <img src="driver id 1.jpg" alt="Посвідчення водія (лицьова)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition border-b border-gray-900" onerror="this.style.display='none'">
+                        <img src="driver id 2.jpg" alt="Посвідчення водія (зворотна)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
+                    </div>
+                    <h4 class="font-bold text-white mb-3 text-center text-sm">Посвідчення водія</h4>
+                    <div class="flex flex-col gap-2 w-full mt-auto">
+                        <div class="flex gap-2 w-full">
+                            <a href="driver id 1.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Лице)</a>
+                            <a href="driver id 2.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Зворот)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Свідоцтво про реєстрацію ТЗ (лицьова + зворотна) -->
+                <div class="bg-gray-900 border border-gray-800 rounded-xl p-4 flex flex-col items-center group hover:border-accent transition">
+                    <div class="w-full h-40 bg-gray-800 rounded-lg overflow-hidden mb-4 relative flex flex-col">
+                        <img src="id car 1.jpg" alt="Свідоцтво про реєстрацію ТЗ (лицьова)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition border-b border-gray-900" onerror="this.style.display='none'">
+                        <img src="id car 2.jpg" alt="Свідоцтво про реєстрацію ТЗ (зворотна)" class="object-cover w-full h-1/2 opacity-80 group-hover:opacity-100 transition" onerror="this.style.display='none'">
+                    </div>
+                    <h4 class="font-bold text-white mb-3 text-center text-sm">Свідоцтво про реєстрацію ТЗ</h4>
+                    <div class="flex flex-col gap-2 w-full mt-auto">
+                        <div class="flex gap-2 w-full">
+                            <a href="id car 1.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Лице)</a>
+                            <a href="id car 2.jpg" target="_blank" class="flex-1 bg-gray-800 border border-gray-600 text-white text-center py-1.5 rounded hover:bg-gray-700 text-xs font-semibold transition">Відкрити (Зворот)</a>
+                        </div>
                     </div>
                 </div>
             </div>
